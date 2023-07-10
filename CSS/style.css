@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Amatic+SC:wght@700&family=Jockey+One&display=swap');
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+body{
+    width: 1440px;
+    height: 1024px;
+    background-color: #293233;
+    margin: 0 auto;
+}
+/*Шапка*/
+.header{
+width: 1440px;
+height: 85px;
+background-color: #336C7E;
+position: absolute;
+top: 0%;
+left: 50%;
+transform: translate(-50%, 0);
+display: flex;
+justify-content: space-between;
+}
+.heading{
+    width: 305px;
+    height: 85px;
+    font-size: 48pt;
+    font-family: 'Jockey One', sans-serif;
+    margin-top: 0;
+    margin-left: 110px;
+    color: #A7CCF9;
+}
+.btn_auth_reg{
+    width: 310px;
+    height: 45px;
+    border-radius: 100px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 24pt;
+    background-color: #A7CCF9;
+    margin-top: 25px;
+    margin-right: 110px;
+}
+/*Контент*/
+.body_site{
+    width: 1100px;
+    height: 500px;
+    border-radius: 50px;
+    background-color: #465557;
+    margin-top: 250px;
+    margin-left: 185px;
+}
+
+
+/*Подвал*/
+.footer{
+width: 1440px;
+height: 110px;
+position: fixed;
+bottom: 0%;
+left: 50%;
+transform: translate(-50%, 0);
+display: flex;
+justify-content: space-between;
+background-color: #274751;
+}
+.name-company{
+    width: 385px;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 0%;
+    margin-left: 110px;
+    margin-top: 25px;
+}
+.znak{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 68pt;
+}
+p{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 26pt;
+    margin-top: 45px;
+    margin-bottom: 0%;
+}
+/*Иконки соц сетей*/
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 15px;
+    margin-top: auto;
+    margin-right: 110px;
+    display: flex;
+    justify-content: center;
+}
+.social-icons a i {
+    font-size: 32px;
+    line-height: 64px;
+    transition: 0.3s;
+}
+.social-icons a {
+    text-decoration:none;
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: #BFE2FF;
+    text-align: center;
+    margin: 0 8px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    color: #337AB7;
+}
+.social-icons a::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 3px;
+    background: rgba(51, 122, 183, 0.3);
+    height: 10%;
+    width: 100%;
+    transform: skewX(-45deg);
+    transition: 0.3s;
+}
+.social-icons a::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 64px;
+    background: rgba(51, 122, 183, 0.6);
+    height: 100%;
+    width: 10%;
+    transform: skewY(-45deg);
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    transform: translate(-5%, 5%);
+    box-shadow: 6px 4px 20px rgba(0, 0, 0, 0.5);
+}
+.social-icons a:hover {
+    background: #337AB7;
+}
+.social-icons a:hover i {
+    color: #fff;
+}
+.social-icons a:hover::after {
+    background: #184e7c;
+}
+.social-icons a:hover::before {
+    background: #2a70aa;
+}
+/**/
+.slider{
+    width: 1100px;
+    height: 600px;
+    justify-content: flex-end;
+    position: absolute;
+    overflow: hidden;
+}
+img{
+    height: 330px;
+    width: 250px;
+    padding: 25px 25px ;
+    padding-bottom: 10px;
+    border-radius: 70px;
+}
+.name_game{
+    justify-content: end;
+    font-size: 24pt;
+    color: white;
+    font-family: impact;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 250px;
+    padding-left: 25px;
+    text-align: center;
+}
+.slider_line{
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 3%;
+    left: 0;
+    transition: all ease 1s;
+}
+.slider_block{
+    margin: 25px 25px;
+    padding: 5px;
+    height: 450px;
+    width: 340px;
+    background-color: #677E81;
+    border-radius: 50px;
+    position: relative;
+}
+.slider_btn_next,
+.slider_btn_back{
+    height: 50px;
+    width: 50px;
+    margin: 1%;
+    margin-top: 3%;
+    color: black;
+    background-color: #A4A4A4;
+    border-radius: 100px;
+    position: static;
+}
